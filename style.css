@@ -1,0 +1,90 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #4286f4;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+}
+
+h1 {
+  margin: 0;
+}
+
+#controls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+}
+
+.mode-buttons,
+.size-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.size,
+.mode,
+.erase {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4286f4;
+}
+
+.active-button {
+  background-color: #fff;
+  color: #4286f4;
+}
+
+.square {
+  background-color: #fff;
+}
+
+#grid-container {
+  border: 5px solid #4286f4;
+  width: 540px; /* width of container + 5px border on each side */
+  margin: 0 auto;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 1px;
+  width: 512px;
+  height: 512px;
+  background-color: #eee;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4286f4;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: Verdana;
+}
